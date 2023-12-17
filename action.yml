@@ -29,6 +29,9 @@ inputs:
   docker_compose_down:
     description: Execute docker compose-down ("true" or "false").
     default: 'false'
+  docker_system_prune:
+    description: Execute docker system prune
+    default: 'false'
 runs:
   using: docker
   image: Dockerfile
@@ -41,3 +44,4 @@ runs:
     DOCKER_COMPOSE_PREFIX: ${{ inputs.docker_compose_prefix }}
     USE_DOCKER_STACK: ${{ inputs.use_stack }}
     DOCKER_COMPOSE_DOWN: ${{ inputs.docker_compose_down }}
+    DOCKER_SYSTEM_PRUNE: ${{ inputs.docker_system_prune }}
