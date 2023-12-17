@@ -1,4 +1,4 @@
-name: SSH-Compose
+name: SSH-Docker-Prune-Compose
 description: SSH into host and deploy repository with Docker Compose
 branding:
   icon: server
