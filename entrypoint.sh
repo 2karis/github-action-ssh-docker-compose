@@ -17,7 +17,7 @@ trap cleanup EXIT
 log "Packing workspace into archive to transfer onto remote machine."
 tar cjvf /tmp/workspace.tar.bz2 --exclude .git --exclude vendor .
 
-ls
+ls /tmp/
 
 log "Launching ssh agent."
 eval `ssh-agent -s`
